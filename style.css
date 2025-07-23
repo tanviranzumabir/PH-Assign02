@@ -38,3 +38,8 @@
     margin-bottom: 30px;
     
 }
+
+.hellao{
+    display: flex;
+    justify-content: space-between;
+}
