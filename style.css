@@ -1,17 +1,36 @@
-
 .noto-serif-regular {
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: 600 ;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 
 .inter-regular {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600 ;
-  font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* header section */
+.displayflex{
+    display: flex;
+}
+.navbar{
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-right: 150px ;
+    margin-left: 150px;
+    align-items: center;
+}
+.ullist{
+    gap: 48px;
+    list-style: none;
+    font-family: "Inter", sans-serif ;
+}
+.hrefe{
+    text-decoration: none;
 }
