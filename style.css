@@ -293,6 +293,10 @@ body.bodysection { background-color: rgba(245, 248, 255, 1); }
 }
 .hululu {
     padding: 38px 0 38px 70px;
+
+}
+.imgbdge{
+    position: absolute; top: 0; right: 0; width: 170px; height: 170px; animation: spin 3s linear infinite; transform-origin: 50% 50%; scale: 1.75;
 }
 /* Responsive: Tablet */
 @media screen and (max-width: 1024px) {
@@ -379,6 +383,9 @@ body.bodysection { background-color: rgba(245, 248, 255, 1); }
         align-items: center;
         justify-content: center;
         height: 50px;
+    }
+    .imgbdge{
+        display: none;
     }
 }
 
