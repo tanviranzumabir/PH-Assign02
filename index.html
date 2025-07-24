@@ -5,16 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flowers</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bodysection" style="margin-left: 250px; margin-right: 250px; background-color: rgba(245, 248, 255, 1);">
-    <header>
+<body class="bodysection">
+    <!-- Header Section with Navigation and Hero -->
+    <header class="margin">
         <nav class="navbar displayflex">
             <div class="logo">
                 <img src="assets/logo.png" alt="logo">
@@ -22,27 +25,28 @@
             <div class="nav-links">
                 <ul class="ullist displayflex">
                     <li>
-                        <a class="hrefe" href="" style="color: rgba(37, 36, 50, 1); font-weight: 800;">Home</a>
+                        <a class="hrefe nav-home" href="">Home</a>
                     </li>
                     <li>
-                        <a class="hrefe" href="" style="color:rgba(137, 135, 161, 1);">Shop</a>
+                        <a class="hrefe nav-link" href="">Shop</a>
                     </li>
                     <li>
-                        <a class="hrefe" href="" style="color:rgba(137, 135, 161, 1);">About us</a>
+                        <a class="hrefe nav-link" href="">About us</a>
                     </li>
-                    <li style="display: flex; gap: 5px; align-items: center;">
+                    <li class="nav-cart">
                         <img src="assets/cart.png" alt="Cart" style="height: 25px;">
-                        <a class="hrefe" href="" style="color: rgba(37, 36, 50, 1); font-weight: 500;">Cart($56)</a>
+                        <a class="hrefe cart-link" href="">Cart($56)</a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <section style="display: flex; align-items: last baseline; margin-top: 120px;">
+        <!-- Hero Section -->
+        <section class="hero-section">
             <div class="ajairatext">
-                <h1 style="font-family: 'Noto Serif', serif; font-size: 65px;">
-                    ALWAYS <span style="color: rgba(233, 90, 8, 1);">FRESH <br> FLOWERS</span>
+                <h1 class="hero-title">
+                    ALWAYS <span class="hero-title-highlight">FRESH <br> FLOWERS</span>
                 </h1>
-                <p style="font-family: 'Inter', sans-serif; color: rgba(0, 0, 0, 0.5); font-size: 22px;">
+                <p class="hero-desc">
                     Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
                     exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion.
                 </p>
@@ -53,104 +57,81 @@
         </section>
     </header>
     <main>
+        <!-- Plants Section -->
         <section>
-            <div style="text-align: center; margin-top: 120px;">
-                <h1 style="font-family: 'Noto Serif', serif; font-size: 50px;">
-                    <span style="color: rgba(233, 90, 8, 1);">Our </span>Plants
+            <div class="plants-title">
+                <h1 class="plants-heading">
+                    <span class="plants-heading-highlight">Our </span>Plants
                 </h1>
-                <p
-                    style="font-weight: 500; font-family: Inter, sans-serif; color: rgba(0, 0, 0, 0.5); margin-bottom: 49px;">
+                <p class="plants-desc">
                     Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
                     exotic blooms, we offer a wide variety of fresh.
                 </p>
             </div>
             <div>
-                <div class="plantsection" style="display: grid; grid-template-columns: repeat(4, 1fr);">
-                    <div class="plantcard" style="text-align: center;">
+                <div class="plantsection margin">
+                    <!-- Plant Cards -->
+                    <div class="plantcard">
                         <img src="assets/sample-flower-image.png" alt="Plant">
-                        <h2 style="font-family: Inter, sans-serif; font-weight: 600; font-size: 22px;">Lily Blossom</h2>
-                        <p style="font-family: Inter, sans-serif; font-weight: 800; font-size: 22px;">20 USD</p>
-                        <button
-                            style="height: 50px; width: 270px; background-color: rgba(233, 90, 8, 1); border: none; color: white; font-family: Inter, sans-serif; font-size: 16px; font-weight: 600;">
-                            ADD TO CART
-                        </button>
+                        <h2 class="plantcard-title">Lily Blossom</h2>
+                        <p class="plantcard-price">20 USD</p>
+                        <button class="plantcard-btn">ADD TO CART</button>
                     </div>
-                    <div class="plantcard" style="text-align: center;">
+                    <div class="plantcard">
                         <img src="assets/sample-flower-image.png" alt="Plant">
-                        <h2 style="font-family: Inter, sans-serif; font-weight: 600; font-size: 22px;">Lily Blossom</h2>
-                        <p style="font-family: Inter, sans-serif; font-weight: 800; font-size: 22px;">20 USD</p>
-                        <button
-                            style="height: 50px; width: 270px; background-color: rgba(233, 90, 8, 1); border: none; color: white; font-family: Inter, sans-serif; font-size: 16px; font-weight: 600;">
-                            ADD TO CART
-                        </button>
+                        <h2 class="plantcard-title">Lily Blossom</h2>
+                        <p class="plantcard-price">20 USD</p>
+                        <button class="plantcard-btn">ADD TO CART</button>
                     </div>
-                    <div class="plantcard" style="text-align: center;">
+                    <div class="plantcard">
                         <img src="assets/sample-flower-image.png" alt="Plant">
-                        <h2 style="font-family: Inter, sans-serif; font-weight: 600; font-size: 22px;">Lily Blossom</h2>
-                        <p style="font-family: Inter, sans-serif; font-weight: 800; font-size: 22px;">20 USD</p>
-                        <button
-                            style="height: 50px; width: 270px; background-color: rgba(233, 90, 8, 1); border: none; color: white; font-family: Inter, sans-serif; font-size: 16px; font-weight: 600;">
-                            ADD TO CART
-                        </button>
+                        <h2 class="plantcard-title">Lily Blossom</h2>
+                        <p class="plantcard-price">20 USD</p>
+                        <button class="plantcard-btn">ADD TO CART</button>
                     </div>
-                    <div class="plantcard" style="text-align: center;">
+                    <div class="plantcard">
                         <img src="assets/sample-flower-image.png" alt="Plant">
-                        <h2 style="font-family: Inter, sans-serif; font-weight: 600; font-size: 22px;">Lily Blossom</h2>
-                        <p style="font-family: Inter, sans-serif; font-weight: 800; font-size: 22px;">20 USD</p>
-                        <button
-                            style="height: 50px; width: 270px; background-color: rgba(233, 90, 8, 1); border: none; color: white; font-family: Inter, sans-serif; font-size: 16px; font-weight: 600;">
-                            ADD TO CART
-                        </button>
+                        <h2 class="plantcard-title">Lily Blossom</h2>
+                        <p class="plantcard-price">20 USD</p>
+                        <button class="plantcard-btn">ADD TO CART</button>
                     </div>
-                    <div class="plantcard" style="text-align: center;">
+                    <div class="plantcard">
                         <img src="assets/sample-flower-image.png" alt="Plant">
-                        <h2 style="font-family: Inter, sans-serif; font-weight: 600; font-size: 22px;">Lily Blossom</h2>
-                        <p style="font-family: Inter, sans-serif; font-weight: 800; font-size: 22px;">20 USD</p>
-                        <button
-                            style="height: 50px; width: 270px; background-color: rgba(233, 90, 8, 1); border: none; color: white; font-family: Inter, sans-serif; font-size: 16px; font-weight: 600;">
-                            ADD TO CART
-                        </button>
+                        <h2 class="plantcard-title">Lily Blossom</h2>
+                        <p class="plantcard-price">20 USD</p>
+                        <button class="plantcard-btn">ADD TO CART</button>
                     </div>
-                    <div class="plantcard" style="text-align: center;">
+                    <div class="plantcard">
                         <img src="assets/sample-flower-image.png" alt="Plant">
-                        <h2 style="font-family: Inter, sans-serif; font-weight: 600; font-size: 22px;">Lily Blossom</h2>
-                        <p style="font-family: Inter, sans-serif; font-weight: 800; font-size: 22px;">20 USD</p>
-                        <button
-                            style="height: 50px; width: 270px; background-color: rgba(233, 90, 8, 1); border: none; color: white; font-family: Inter, sans-serif; font-size: 16px; font-weight: 600;">
-                            ADD TO CART
-                        </button>
+                        <h2 class="plantcard-title">Lily Blossom</h2>
+                        <p class="plantcard-price">20 USD</p>
+                        <button class="plantcard-btn">ADD TO CART</button>
                     </div>
-                    <div class="plantcard" style="text-align: center;">
+                    <div class="plantcard">
                         <img src="assets/sample-flower-image.png" alt="Plant">
-                        <h2 style="font-family: Inter, sans-serif; font-weight: 600; font-size: 22px;">Lily Blossom</h2>
-                        <p style="font-family: Inter, sans-serif; font-weight: 800; font-size: 22px;">20 USD</p>
-                        <button
-                            style="height: 50px; width: 270px; background-color: rgba(233, 90, 8, 1); border: none; color: white; font-family: Inter, sans-serif; font-size: 16px; font-weight: 600;">
-                            ADD TO CART
-                        </button>
+                        <h2 class="plantcard-title">Lily Blossom</h2>
+                        <p class="plantcard-price">20 USD</p>
+                        <button class="plantcard-btn">ADD TO CART</button>
                     </div>
-                    <div class="plantcard" style="text-align: center;">
+                    <div class="plantcard">
                         <img src="assets/sample-flower-image.png" alt="Plant">
-                        <h2 style="font-family: Inter, sans-serif; font-weight: 600; font-size: 22px;">Lily Blossom</h2>
-                        <p style="font-family: Inter, sans-serif; font-weight: 800; font-size: 22px;">20 USD</p>
-                        <button
-                            style="height: 50px; width: 270px; background-color: rgba(233, 90, 8, 1); border: none; color: white; font-family: Inter, sans-serif; font-size: 16px; font-weight: 600;">
-                            ADD TO CART
-                        </button>
+                        <h2 class="plantcard-title">Lily Blossom</h2>
+                        <p class="plantcard-price">20 USD</p>
+                        <button class="plantcard-btn">ADD TO CART</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="displayflex hellao" style="margin-top: 210px;">
+        <!-- Flower Lover Section -->
+        <section class="displayflex hellao margin" style="margin-top: 210px;">
             <div class="image-container">
                 <img src="assets/flower-store.png" alt="Flower Shop">
-                <!-- <img src="assets/trusted-badge.png" alt="Trusted Seller Badge"> -->
             </div>
             <div style="padding: 38px 0 38px 70px;">
-                <h1 style="font-family: 'Noto Serif', serif; font-size: 50px; font-weight: 700;">
+                <h1 class="flowerlover-title">
                     Flower & Plants <br>Lover
                 </h1>
-                <ul style="color: rgba(0, 0, 0, 0.5); font-family: Inter, sans-serif; font-size: 24px;">
+                <ul class="flowerlover-list">
                     <li>
                         <p>
                             Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic
@@ -172,74 +153,82 @@
                 </ul>
             </div>
         </section>
+        <!-- Deals Section Title -->
         <section>
-            <div style="align-items: center; text-align: center; margin-top: 133px;">
-                <h1 style="font-family: Noto Serif, serif; font-size: 50px; font-weight: 700;">
-                    <span style="color: rgba(233, 90, 8, 1);">Latest</span> Deals
+            <div class="deals-title margin">
+                <h1 class="deals-heading">
+                    <span class="deals-heading-highlight">Latest</span> Deals
                 </h1>
-                <p
-                    style="font-family: Inter, sans-serif; color: rgba(0, 0, 0, 0.5); font-size: 22px; font-weight: 500;">
+                <p class="deals-desc" style="margin-bottom: 120px;">
                     Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
                     exotic blooms, we offer a wide variety of fresh.
                 </p>
             </div>
         </section>
+        <!-- Deals Cards Section -->
         <section>
-            <div style="display: flex; gap: 26px;">
-                
-                <div style="display: grid; grid-template-rows: 1fr 1fr; gap: 26px; width: 35%;">
-                    <div
-                        style="background-image: url(assets/deal-bloom.png); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 15px; width: 100%; height: 197px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                        <p
-                            style="font-family: Noto Serif, serif; font-size: 20px; font-weight: 700; color: rgba(255, 255, 255, 1); margin: 0;">
-                            60% Off | Bloom Plant
-                        </p>
-                        <p style="margin: 18px 0 0 0;">
-                            <a href=""
-                                style="color: rgba(255, 255, 255, 1); font-family: Inter, sans-serif; font-size: 16px; font-weight: 600;">
-                                Shop Now
-                            </a>
-                        </p>
+            <div class="deals-section margin">
+                <div class="deals-left">
+                    <div class="deal-card deal-card-bloom">
+                        <p class="deal-card-title">60% Off | Bloom Plant</p>
+                        <p><a href="" class="deal-card-link">Shop Now</a></p>
                     </div>
-                    <div
-                        style="background-image: url(assets/deal-ana.png); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 15px; width: 100%; height: 197px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                        <p
-                            style="font-family: Noto Serif, serif; font-size: 20px; font-weight: 700; color: rgba(255, 255, 255, 1); margin: 0;">
-                            30% Off | Ana Plant
-                        </p>
-                        <p style="margin: 18px 0 0 0;">
-                            <a href=""
-                                style="color: rgba(255, 255, 255, 1); font-family: Inter, sans-serif; font-size: 16px; font-weight: 600;">
-                                Shop Now
-                            </a>
-                        </p>
+                    <div class="deal-card deal-card-ana">
+                        <p class="deal-card-title">30% Off | Ana Plant</p>
+                        <p><a href="" class="deal-card-link">Shop Now</a></p>
                     </div>
                 </div>
-                
-                <div style="display: flex; width: 65%;">
-                    <div
-                        style="background-image: url(assets/deal-zabo.png); background-repeat: no-repeat; background-size: cover; background-position: center; border-radius: 15px; width: 100%; height: 420px; display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                        <p
-                            style="font-family: Noto Serif, serif; font-size: 40px; font-weight: 700; color: rgba(255, 255, 255, 1); margin: 0;">
-                            25% Off | Zabo Plant
-                        </p>
-                        <p style="margin: 18px 0 0 0;">
-                            <a href=""
-                                style="color: rgba(255, 255, 255, 1); font-family: Inter, sans-serif; font-size: 30px; font-weight: 600;">
-                                Shop Now
-                            </a>
-                        </p>
+                <div class="deals-right">
+                    <div class="deal-card deal-card-zabo">
+                        <p class="deal-card-title-large">25% Off | Zabo Plant</p>
+                        <p><a href="" class="deal-card-link-large">Shop Now</a></p>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- Newsletter Section -->
         <section>
-            <div style="background-image: url(assets/news-letter-bg.png);">
-                <h1>Join the colorful Bunch</h1>
-                <textarea name="" id=""></textarea><button>Subscribe</button>
+            <div class="newsletter-section">
+                <h1 style="text-align: center; color: white; font-size: 50px;">Join the colorful Bunch</h1>
+                <div class="newsletter-form">
+                    <!-- Changed textarea to input for email -->
+                    <input type="email" placeholder="Write email" class="texare" />
+                    <button class="bbttnn">Subscribe</button>
+                </div>
             </div>
         </section>
     </main>
+    <!-- Footer Section -->
+    <footer class="footer-section margin">
+        <div class="footer-section-one">
+            <img src="assets/logo.png" alt="">
+            <p class="footer-section-one-p">Indulge your senses with the <br>beauty and fragrance of our fresh <br>flower shop. </p>
+        </div>
+        <div class="footer-section-two">
+            <ul class="footersectionlist" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 32px;">
+                <li><a href="" class="footer-section-two-link">Home</a></li>
+                <li><a href="" class="footer-section-two-link">About Us</a></li>
+                <li><a href="" class="footer-section-two-link">Blog</a></li>
+                <li><a href="" class="footer-section-two-link">FAQ</a></li>
+                <li><a href="" class="footer-section-two-link">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section-three">
+            <ul class="footersectionlist">
+                <li><a href="" class="footer-section-three-link">Features</a></li>
+                <li><a href="" class="footer-section-three-link">Pricing</a></li>
+                <li><a href="" class="footer-section-three-link">Privacy Policy</a></li>
+                <li><a href="" class="footer-section-three-link">Terms of Service</a></li>
+                <li><a href="" class="footer-section-three-link">Help Center</a></li>
+            </ul>
+        </div>
+        <div class="footer-section-four displayflex">
+            <a href=""><img src="assets/icon-linkedin.png" alt="LinkedIn"></a>
+            <a href=""><img src="assets/icon-twitter.png" alt="Twitter"></a>
+            <a href=""><img src="assets/icon-facebook.png" alt="Facebook"></a>
+            <a href=""><img src="assets/icon-youtube.png" alt="YouTube"></a>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -1,13 +1,13 @@
+/* Font styles for Noto Serif Regular */
 .noto-serif-regular {
     font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    font-variation-settings:
-        "wdth" 100;
+    font-variation-settings: "wdth" 100;
 }
 
-
+/* Font styles for Inter Regular */
 .inter-regular {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -15,31 +15,383 @@
     font-style: normal;
 }
 
-/* header section */
-.displayflex{
+/* Header section - Flex container for navigation bar */
+.displayflex {
     display: flex;
 }
-.navbar{
+
+/* Navbar styles */
+.navbar {
     justify-content: space-between;
     margin-top: 30px;
     align-items: center;
 }
-.ullist{
+
+/* Unordered list styles for navigation */
+.ullist {
     gap: 48px;
     list-style: none;
-    font-family: "Inter", sans-serif ;
+    font-family: "Inter", sans-serif;
 }
-.hrefe{
+
+/* Remove underline from links */
+.hrefe {
     text-decoration: none;
 }
 
-/* card section */
-.plantcard{
+/* Card section - Plant card container */
+.plantcard {
     margin-bottom: 30px;
-    
+    gap: 10px;
+    text-align: center;
 }
 
-.hellao{
+/* Flex container for card layout */
+.hellao {
     display: flex;
     justify-content: space-between;
+    margin-top: 210px;
+}
+
+/* Body background color */
+body.bodysection {
+    background-color: rgba(245, 248, 255, 1);
+}
+
+/* Navbar as flex container */
+.navbar.displayflex {
+    display: flex;
+}
+
+/* Unordered list as flex container */
+.ullist.displayflex {
+    display: flex;
+}
+
+/* Active navigation link style */
+.nav-home {
+    color: rgba(37, 36, 50, 1);
+    font-weight: 800;
+}
+
+/* Inactive navigation link style */
+.nav-link {
+    color: rgba(137, 135, 161, 1);
+}
+
+/* Cart section in navbar */
+.nav-cart {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+/* Cart link style */
+.cart-link {
+    color: rgba(37, 36, 50, 1);
+    font-weight: 500;
+}
+
+/* Hero section layout */
+.hero-section {
+    display: flex;
+    margin-top: 120px;
+}
+
+/* Hero section title */
+.hero-title {
+    font-family: 'Noto Serif', serif;
+    font-size: 65px;
+}
+
+/* Highlighted text in hero title */
+.hero-title-highlight {
+    color: rgba(233, 90, 8, 1);
+}
+
+/* Hero section description */
+.hero-desc {
+    font-family: 'Inter', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+}
+
+/* Plants section title alignment and margin */
+.plants-title {
+    text-align: center;
+    margin-top: 120px;
+}
+
+/* Plants section heading */
+.plants-heading {
+    font-family: 'Noto Serif', serif;
+    font-size: 50px;
+}
+
+/* Highlighted text in plants heading */
+.plants-heading-highlight {
+    color: rgba(233, 90, 8, 1);
+}
+
+/* Plants section description */
+.plants-desc {
+    font-weight: 500;
+    font-family: Inter, sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 49px;
+}
+
+/* Plant cards grid layout */
+.plantsection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Plant card title */
+.plantcard-title {
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+/* Plant card price */
+.plantcard-price {
+    font-family: Inter, sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+/* Plant card button */
+.plantcard-btn {
+    height: 50px;
+    width: 270px;
+    background-color: rgba(233, 90, 8, 1);
+    border: none;
+    color: white;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Flower lover section title */
+.flowerlover-title {
+    font-family: 'Noto Serif', serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* Flower lover list style */
+.flowerlover-list {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+}
+
+/* Deals section title alignment and margin */
+.deals-title {
+    align-items: center;
+    text-align: center;
+    margin-top: 133px;
+}
+
+/* Deals section heading */
+.deals-heading {
+    font-family: Noto Serif, serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* Highlighted text in deals heading */
+.deals-heading-highlight {
+    color: rgba(233, 90, 8, 1);
+}
+
+/* Deals section description */
+.deals-desc {
+    font-family: Inter, sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* Deals section layout */
+.deals-section {
+    display: flex;
+    gap: 26px;
+}
+
+/* Left side of deals section as grid */
+.deals-left {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 26px;
+    width: 35%;
+}
+
+/* Deal card base styles */
+.deal-card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    width: 100%;
+    height: 197px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Deal card with bloom background */
+.deal-card-bloom {
+    background-image: url(assets/deal-bloom.png);
+}
+
+/* Deal card with ana background */
+.deal-card-ana {
+    background-image: url(assets/deal-ana.png);
+}
+
+/* Deal card title */
+.deal-card-title {
+    font-family: Noto Serif, serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+}
+
+/* Deal card link */
+.deal-card-link {
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 18px 0 0 0;
+}
+
+/* Right side of deals section as flex */
+.deals-right {
+    display: flex;
+    width: 65%;
+}
+
+/* Deal card with zabo background and larger height */
+.deal-card-zabo {
+    background-image: url(assets/deal-zabo.png);
+    height: 420px;
+}
+
+/* Large deal card title */
+.deal-card-title-large {
+    font-family: Noto Serif, serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    margin: 0;
+}
+
+/* Large deal card link */
+.deal-card-link-large {
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 18px 0 0 0;
+}
+
+/* Newsletter section background and layout */
+.newsletter-section {
+    background-image: url(assets/news-letter-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 533px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Noto Serif, serif;
+}
+
+/* Margin utility class */
+.margin {
+    margin: 0 170px;
+}
+
+/* Newsletter input field */
+.texare {
+    width: 644px;
+    font-family: Noto Serif, serif;
+    height: 50px;
+}
+
+/* Newsletter button */
+.bbttnn {
+    height: 50px;
+    width: 186px;
+    background-color: rgba(233, 90, 8, 1);
+    border: none;
+    color: white;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Newsletter form layout */
+.newsletter-form {
+    display: flex;
+}
+
+/* Footer section paragraph */
+.footer-section-one-p {
+    font-family: Inter, sans-serif;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* Footer section layout */
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 190px;
+    margin-right: 190px;
+}
+
+/* Footer list link style */
+.ultextdecorationnone {
+    text-decoration: none;
+    color: rgba(107, 114, 128, 1);
+    font-family: Inter, sans-serif;
+}
+
+/* Footer section four layout */
+.footer-section-four {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0 140px 0;
+}
+
+/* Footer section two and three links */
+.footer-section-two-link,
+.footer-section-three-link {
+    text-decoration: none;
+    color: rgba(107, 114, 128, 1);
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Footer section list layout */
+.footersectionlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
