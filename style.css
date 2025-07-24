@@ -291,9 +291,11 @@ body.bodysection { background-color: rgba(245, 248, 255, 1); }
     flex-direction: column;
     gap: 32px;
 }
-
+.hululu {
+    padding: 38px 0 38px 70px;
+}
 /* Responsive: Tablet */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .flowerlover-text { padding: 20px 0; }
     .margin { margin: 0 16px; }
     .plantsection {
@@ -368,10 +370,20 @@ body.bodysection { background-color: rgba(245, 248, 255, 1); }
         margin: 60px 16px;
     }
     .footer-section-four { justify-content: center; }
+    .hululu {
+        
+        text-align: center;
+    }
+    .hlubtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+    }
 }
 
 /* Responsive: Mobile */
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
     .plantsection { grid-template-columns: 1fr; }
     .plants-heading,
     .deals-heading { font-size: 32px; }
@@ -379,7 +391,6 @@ body.bodysection { background-color: rgba(245, 248, 255, 1); }
     .ajairaimage img {
     max-width: 100%;
     height: auto;
-    display: block; /* avoid inline gaps */
+    display: block;
 }
-
 }
