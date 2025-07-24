@@ -376,4 +376,10 @@ body.bodysection { background-color: rgba(245, 248, 255, 1); }
     .plants-heading,
     .deals-heading { font-size: 32px; }
     .plantcard-btn { width: 100%; }
+    .ajairaimage img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* avoid inline gaps */
+}
+
 }

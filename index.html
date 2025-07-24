@@ -125,7 +125,26 @@
         <!-- Flower Lover Section -->
         <section class="displayflex hellao margin" style="margin-top: 210px;">
             <div class="image-container">
-                <img src="assets/flower-store.png" alt="Flower Shop">
+                <div style="position: relative; display: inline-block;">
+                    <img src="assets/flower-store.png" alt="Flower Shop">
+                    <img src="assets/trusted-badge.png" alt="Trusted Badge" style="
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 170px;
+                            height: 170px;
+                            animation: spin 4s linear infinite;
+                            animation: spin 3s linear infinite;
+                            transform-origin: 50% 50%;scale: 1.75;">
+                        
+                </div>
+                <style>
+                    @keyframes spin {
+                        100% {
+                            transform: rotate(360deg);
+                        }
+                    }
+                </style>
             </div>
             <div style="padding: 38px 0 38px 70px;">
                 <h1 class="flowerlover-title">
@@ -203,7 +222,8 @@
         <div class="footer-section-one">
             <img src="assets/logo.png" alt="">
             <p class="footer-section-one-p">Indulge your senses with the <br>beauty and fragrance of our fresh
-                <br>flower shop. </p>
+                <br>flower shop.
+            </p>
         </div>
         <div class="footer-section-two">
             <ul class="footersectionlist"
@@ -234,4 +254,3 @@
 </body>
 
 </html>
-<!-- Hello Sir How Are U -->
