@@ -1,167 +1,116 @@
-/* Font styles for Noto Serif Regular */
+/* Noto Serif Regular font */
 .noto-serif-regular {
     font-family: "Noto Serif", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
 
-/* Font styles for Inter Regular */
+/* Inter Regular font */
 .inter-regular {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 400;
     font-style: normal;
 }
 
-/* Header section - Flex container for navigation bar */
-.displayflex {
-    display: flex;
-}
+/* Flex utilities */
+.displayflex { display: flex; }
 
-/* Navbar styles */
+/* Navbar */
 .navbar {
     justify-content: space-between;
     margin-top: 30px;
     align-items: center;
 }
+.navbar.displayflex { display: flex; }
 
-/* Unordered list styles for navigation */
+/* Navigation list */
 .ullist {
     gap: 48px;
     list-style: none;
     font-family: "Inter", sans-serif;
 }
+.ullist.displayflex { display: flex; }
 
-/* Remove underline from links */
-.hrefe {
-    text-decoration: none;
+/* Navigation links */
+.hrefe { text-decoration: none; }
+.nav-home { color: rgba(37, 36, 50, 1); font-weight: 800; }
+.nav-link { color: rgba(137, 135, 161, 1); }
+.nav-cart {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.cart-link {
+    color: rgba(37, 36, 50, 1);
+    font-weight: 500;
 }
 
-/* Card section - Plant card container */
+/* Card section */
 .plantcard {
     margin-bottom: 30px;
     gap: 10px;
     text-align: center;
 }
 
-/* Flex container for card layout */
+/* Card layout */
 .hellao {
     display: flex;
     justify-content: space-between;
     margin-top: 210px;
 }
 
-/* Body background color */
-body.bodysection {
-    background-color: rgba(245, 248, 255, 1);
-}
+/* Body background */
+body.bodysection { background-color: rgba(245, 248, 255, 1); }
 
-/* Navbar as flex container */
-.navbar.displayflex {
-    display: flex;
-}
-
-/* Unordered list as flex container */
-.ullist.displayflex {
-    display: flex;
-}
-
-/* Active navigation link style */
-.nav-home {
-    color: rgba(37, 36, 50, 1);
-    font-weight: 800;
-}
-
-/* Inactive navigation link style */
-.nav-link {
-    color: rgba(137, 135, 161, 1);
-}
-
-/* Cart section in navbar */
-.nav-cart {
-    display: flex;
-    gap: 5px;
-    align-items: center;
-}
-
-/* Cart link style */
-.cart-link {
-    color: rgba(37, 36, 50, 1);
-    font-weight: 500;
-}
-
-/* Hero section layout */
+/* Hero section */
 .hero-section {
     display: flex;
     margin-top: 120px;
 }
-
-/* Hero section title */
 .hero-title {
     font-family: 'Noto Serif', serif;
     font-size: 65px;
 }
-
-/* Highlighted text in hero title */
-.hero-title-highlight {
-    color: rgba(233, 90, 8, 1);
-}
-
-/* Hero section description */
+.hero-title-highlight { color: rgba(233, 90, 8, 1); }
 .hero-desc {
     font-family: 'Inter', sans-serif;
     color: rgba(0, 0, 0, 0.5);
     font-size: 22px;
 }
 
-/* Plants section title alignment and margin */
+/* Plants section */
 .plants-title {
     text-align: center;
     margin-top: 120px;
 }
-
-/* Plants section heading */
 .plants-heading {
     font-family: 'Noto Serif', serif;
     font-size: 50px;
 }
-
-/* Highlighted text in plants heading */
-.plants-heading-highlight {
-    color: rgba(233, 90, 8, 1);
-}
-
-/* Plants section description */
+.plants-heading-highlight { color: rgba(233, 90, 8, 1); }
 .plants-desc {
     font-weight: 500;
     font-family: Inter, sans-serif;
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: 49px;
 }
-
-/* Plant cards grid layout */
 .plantsection {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-
-/* Plant card title */
 .plantcard-title {
     font-family: Inter, sans-serif;
     font-weight: 600;
     font-size: 22px;
 }
-
-/* Plant card price */
 .plantcard-price {
     font-family: Inter, sans-serif;
     font-weight: 800;
     font-size: 22px;
 }
-
-/* Plant card button */
 .plantcard-btn {
     height: 50px;
     width: 270px;
@@ -173,62 +122,49 @@ body.bodysection {
     font-weight: 600;
 }
 
-/* Flower lover section title */
+/* Flower lover section */
 .flowerlover-title {
     font-family: 'Noto Serif', serif;
     font-size: 50px;
     font-weight: 700;
 }
-
-/* Flower lover list style */
 .flowerlover-list {
     color: rgba(0, 0, 0, 0.5);
     font-family: Inter, sans-serif;
     font-size: 24px;
 }
+.flowerlover-text {
+    padding: 38px 0 38px 70px;
+}
 
-/* Deals section title alignment and margin */
+/* Deals section */
 .deals-title {
     align-items: center;
     text-align: center;
     margin-top: 133px;
 }
-
-/* Deals section heading */
 .deals-heading {
     font-family: Noto Serif, serif;
     font-size: 50px;
     font-weight: 700;
 }
-
-/* Highlighted text in deals heading */
-.deals-heading-highlight {
-    color: rgba(233, 90, 8, 1);
-}
-
-/* Deals section description */
+.deals-heading-highlight { color: rgba(233, 90, 8, 1); }
 .deals-desc {
     font-family: Inter, sans-serif;
     color: rgba(0, 0, 0, 0.5);
     font-size: 22px;
     font-weight: 500;
 }
-
-/* Deals section layout */
 .deals-section {
     display: flex;
     gap: 26px;
 }
-
-/* Left side of deals section as grid */
 .deals-left {
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 26px;
     width: 35%;
 }
-
-/* Deal card base styles */
 .deal-card {
     background-repeat: no-repeat;
     background-size: cover;
@@ -241,18 +177,8 @@ body.bodysection {
     align-items: center;
     justify-content: center;
 }
-
-/* Deal card with bloom background */
-.deal-card-bloom {
-    background-image: url(assets/deal-bloom.png);
-}
-
-/* Deal card with ana background */
-.deal-card-ana {
-    background-image: url(assets/deal-ana.png);
-}
-
-/* Deal card title */
+.deal-card-bloom { background-image: url(assets/deal-bloom.png); }
+.deal-card-ana { background-image: url(assets/deal-ana.png); }
 .deal-card-title {
     font-family: Noto Serif, serif;
     font-size: 20px;
@@ -260,8 +186,6 @@ body.bodysection {
     color: rgba(255, 255, 255, 1);
     margin: 0;
 }
-
-/* Deal card link */
 .deal-card-link {
     color: rgba(255, 255, 255, 1);
     font-family: Inter, sans-serif;
@@ -269,20 +193,14 @@ body.bodysection {
     font-weight: 600;
     margin: 18px 0 0 0;
 }
-
-/* Right side of deals section as flex */
 .deals-right {
     display: flex;
     width: 65%;
 }
-
-/* Deal card with zabo background and larger height */
 .deal-card-zabo {
     background-image: url(assets/deal-zabo.png);
     height: 420px;
 }
-
-/* Large deal card title */
 .deal-card-title-large {
     font-family: Noto Serif, serif;
     font-size: 40px;
@@ -290,8 +208,6 @@ body.bodysection {
     color: rgba(255, 255, 255, 1);
     margin: 0;
 }
-
-/* Large deal card link */
 .deal-card-link-large {
     color: rgba(255, 255, 255, 1);
     font-family: Inter, sans-serif;
@@ -300,7 +216,7 @@ body.bodysection {
     margin: 18px 0 0 0;
 }
 
-/* Newsletter section background and layout */
+/* Newsletter section */
 .newsletter-section {
     background-image: url(assets/news-letter-bg.png);
     background-size: cover;
@@ -314,20 +230,12 @@ body.bodysection {
     justify-content: center;
     font-family: Noto Serif, serif;
 }
-
-/* Margin utility class */
-.margin {
-    margin: 0 170px;
-}
-
-/* Newsletter input field */
+.margin { margin: 0 170px; }
 .texare {
     width: 644px;
     font-family: Noto Serif, serif;
     height: 50px;
 }
-
-/* Newsletter button */
 .bbttnn {
     height: 50px;
     width: 186px;
@@ -338,20 +246,16 @@ body.bodysection {
     font-size: 16px;
     font-weight: 600;
 }
-
-/* Newsletter form layout */
 .newsletter-form {
     display: flex;
 }
 
-/* Footer section paragraph */
+/* Footer section */
 .footer-section-one-p {
     font-family: Inter, sans-serif;
     font-size: 22px;
     color: rgba(0, 0, 0, 0.5);
 }
-
-/* Footer section layout */
 .footer-section {
     display: flex;
     justify-content: space-between;
@@ -360,23 +264,17 @@ body.bodysection {
     margin-left: 190px;
     margin-right: 190px;
 }
-
-/* Footer list link style */
 .ultextdecorationnone {
     text-decoration: none;
     color: rgba(107, 114, 128, 1);
     font-family: Inter, sans-serif;
 }
-
-/* Footer section four layout */
 .footer-section-four {
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 0 0 140px 0;
 }
-
-/* Footer section two and three links */
 .footer-section-two-link,
 .footer-section-three-link {
     text-decoration: none;
@@ -385,8 +283,6 @@ body.bodysection {
     font-size: 16px;
     font-weight: 500;
 }
-
-/* Footer section list layout */
 .footersectionlist {
     list-style: none;
     padding: 0;
@@ -394,4 +290,90 @@ body.bodysection {
     display: flex;
     flex-direction: column;
     gap: 32px;
+}
+
+/* Responsive: Tablet */
+@media (max-width: 1024px) {
+    .flowerlover-text { padding: 20px 0; }
+    .margin { margin: 0 16px; }
+    .plantsection {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .plantcard {
+        background: white;
+        padding: 16px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    .nav-links ul.ullist li:not(.nav-cart) { display: none; }
+    .nav-links ul.ullist { justify-content: flex-end; }
+    .hero-section {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+        margin-top: 80px;
+    }
+    .ajairatext,
+    .ajairaimage { width: 100%; }
+    .hero-title { font-size: 40px; }
+    .hellao {
+        flex-direction: column;
+        gap: 32px;
+        margin-top: 100px;
+        text-align: center;
+    }
+    .image-container img {
+        width: 100%;
+        height: auto;
+    }
+    .flowerlover-title { font-size: 36px; }
+    .flowerlover-list { font-size: 18px; }
+    .deals-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .deals-left,
+    .deals-right {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .deal-card-zabo { height: 250px; }
+    .deal-card-title-large { font-size: 28px; }
+    .deal-card-link-large { font-size: 18px; }
+    .newsletter-form {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        padding: 0 16px;
+    }
+    .texare,
+    .bbttnn { width: 100%; }
+    .texare {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .bbttnn {
+        height: 50px;
+        font-size: 16px;
+    }
+    .footer-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+        margin: 60px 16px;
+    }
+    .footer-section-four { justify-content: center; }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 576px) {
+    .plantsection { grid-template-columns: 1fr; }
+    .plants-heading,
+    .deals-heading { font-size: 32px; }
+    .plantcard-btn { width: 100%; }
 }
