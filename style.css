@@ -380,13 +380,25 @@ body.bodysection { background-color: rgba(245, 248, 255, 1); }
     }
     .hlubtn {
         display: flex;
-        align-items: center;
+    
         justify-content: center;
-        height: 50px;
+        
     }
     .imgbdge{
         display: none;
     }
+    .texare{
+        width: 60%;
+        height: 50px;
+    }
+    .bbttnn{
+        width: 40%;
+        height: 74px;   
+    } 
+    .hlubtn{
+        margin-left: 36px;
+        margin-right: 36px;
+    }  
 }
 
 /* Responsive: Mobile */
